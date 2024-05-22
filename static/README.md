@@ -1,5 +1,5 @@
-# MLLM-DataEngine Project Page 
-This is the project page for MLLM-DataEngine.
+# HA-DPO Project Page 
+This is the project page for HA-DPO.
 
 
 ## Acknowledgements

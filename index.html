@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MLLM-DataEngine</title>
+  <link rel="icon" type="image/x-icon" href="static/images/opendatalab_logo.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<style>
+
+.row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden;}
+.first-row {background-color: lime; }
+.second-row { flex-grow: 1; border: none; margin: 0; padding: 0;}
+</style>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> MLLM-DataEngine: Closing the Loop of Instruction Tuning Data Generation </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Zhiyuan Zhao <sup>*</sup>,
+              </span>
+
+              <span class="author-block">
+                Linke Ouyang <sup>*</sup>,
+              </span>
+
+              <span class="author-block">
+                <a href="https://wangbindl.github.io/" target="_blank">Bin Wang</a> <sup>*</sup>,
+              </span>
+              
+              <span class="author-block">
+                Yiqi Lin</a>,
+              </span>
+
+              <br>
+              <span class="author-block">
+                Siyuan Huang</a>,
+              </span>
+
+              <span class="author-block">
+                Xiaoyi Dong</a>,
+              </span>
+
+              <span class="author-block">
+                Pan Zhang</a>,
+              </span>
+
+              <span class="author-block">
+                <a href="https://myownskyw7.github.io/" target="_blank">Jiaqi Wang</a>,
+              </span>
+
+              <span class="author-block">
+                <a href="https://conghui.github.io/" target="_blank">Conghui He</a> <sup>&dagger;</sup>,
+              </span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                    <span class="author-block">Shanghai AI Laboratory, &nbsp;&nbsp; </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution &nbsp; &nbsp; &nbsp; <sup>&dagger;</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/opendatalab/MLLM-DataEngine" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2308.13566" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+
+                 <!-- HF Data Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/collections/juliozhao/mllm-dataengine-v2-65fa4baf180d06d37c7eda08" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="static/hf.jpeg">
+                  </span>
+                  <span>Data</span> 
+                </a>  
+              </span>
+              <!-- OpenDataLab Data Link -->
+              <span class="link-block">
+                <a href="https://openxlab.org.cn/datasets/zzy8782180/DataEngine-InstData" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <img src="static/datalab_logo.jpeg">
+                </span>
+                <span>Data</span> 
+              </a>
+            </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          In this paper, we propose MLLM-DataEngine, a novel closed-loop system that bridges data generation, model training, and evaluation. 
+          Within each loop iteration, the MLLM-DataEngine first analyzes the weakness of the model based on the evaluation results, then generates a proper incremental dataset for the next training iteration, and enhances the model capability iteratively. 
+          Compared with previous instruction fine-tuning dataset collection methods which are separate from the benchmarking, MLLM-DataEngine shows better targeting and can improve MLLMs's capabilities more effectively. 
+          Firstly, we propose an Adaptive Bad-case Sampling module, which can effectively analyze model weakness based on the benchmarking results and adjust the generation of incremental datasets flexibly. 
+          Secondly, we resort to GPT-4 to generate high-quality data for specific capability types. 
+          Meanwhile, the most representative in-context examples and abundant information are provided to GPT-4, which helps GPT-4 fully comprehend the model's weakness and further guarantees high-quality generated data. 
+          Through extensive experiments, we find MLLM-DataEngine could boost the MLLMs capability in a targeted and automatic manner without human participants.
+          We hope MLLM-DataEngine could be a general solution for the following MLLMs data curation. The MLLM-DataEngine has been open-sourced and is now available at https://github.com/opendatalab/MLLM-DataEngine.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Paper Instroduction -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3"><small>Data generation strategy in MLLM-DataEngine</small></h2>
+        <div class="content has-text-justified">
+          <img width="1000px" src="static/DataEngine_flowchart.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto;" />
+          <p>The framework of MLLM-DataEngine, showcased in this paper, establishes a cyclical process for iterative enhancement between the model and data. The system harnesses generated data to improve the ability of the model while utilizing feedback from the model evaluation to guide the data generation. This approach allows joint optimization of models and data across multiple iterations, facilitating quick and effective improvement of model performance. MLLM-DataEngine is consisted of four steps:</p>
+          <p>
+            <b>1. Model Evaluation</b>: The model's capabilities are systematically evaluated and bad cases are collected from identified weaknesses. 
+          </p>
+          <p>  
+            <b>2. Prompt Construction</b>: Next, rich image information, well-demonstrated question types and carefully selected in-context examples obtained by Adaptive Bad-case Sampling~(ABS) are integrated to construct a proper prompt for GPT-4 data generation.
+          </p>
+          <p>  
+            <b>3. Data Generation</b>: The prompt constructed in the previous step is fed into GPT-4 for data generation. Meanwhile, all generated data are carefully filtered and processed to ensure high-quality instruction fine-tuning.
+          </p>
+          <p>  
+            <b>4. Model Training</b>: Finally, we use the data generated through the above process to re-instruct fine-tune the model.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper Instruction -->
+
+<!-- Paper Instroduction -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <h2 class="title is-3"><small>Dataset Format</small></h2>
+        <div class="content has-text-justified">
+          <p>
+          </p>
+          <img width="1000px" src="static/showcase.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto;" />
+          <p>The MLLM-DataEngine generate data contains a clear, consice instruction, and corresponding answer. Besides, the instruction-answer pair is reformatted into multi-choices question answering format. The generated data is organized in the following format:</p>
+          <pre>
+          <code>
+          [
+              {
+                  "instruction": "Where is the man wearing a black backpack positioned in the picture?",
+                  "answer": "The man wearing a black backpack is located at the left side of the image, ...",
+                  "short_answer": "Letf middle",
+                  "options": ["Top right", "Bottom right", "Bottom left", "Left middle"],
+                  "choide_answer": "D",
+                  "image": "vg/VG_100K_2/2404787.jpg",
+                  "qtype": 4,
+              },
+              ...
+          ]
+          </code>
+          </pre>
+
+          <p>
+          "instruction": a clear, consice instruction
+      	  </p>
+      	  <p>
+		  "answer": direct answer to the instruction
+		  </p>
+		  <p>
+
+		  "short_answer": the short answer to the instruction
+		  </p>
+		  <p>
+		  
+
+		  "options": four options corresponding to the instruction
+		  </p>
+		  <p>
+
+		  ""choice_answer": correct choice answer option
+		  </p>
+		  <p>
+
+		  "image": Visual Genome image path
+		  </p>
+		  <p>
+
+		  "qtype": question type in SEED-Bench, demonstrated in the following:
+		  </p>
+
+		  <pre>
+          <code>
+		  {
+		      1: 'Scene Understanding', 
+		      2: 'Instance Identity',
+		      3: 'Instance Attributes',
+		      4: 'Instance Location',  
+		      5: 'Instances Counting', 
+		      6: 'Spatial Relation', 
+		      7: 'Instance Interaction', 
+		      8: 'Visual Reasoning', 
+		      9: 'Text Understanding'
+		  }
+		  </code>
+          </pre>
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="columns is-centered has-text-centered">
+  <HR align=center style="border:3 double #000000" width="80%" SIZE=5>
+</div>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h4 class="title">BibTeX</h4>
+      <pre><code>@misc{zhao2023mllmdataengine,
+            title={MLLM-DataEngine: An Iterative Refinement Approach for MLLM}, 
+            author={Zhiyuan Zhao and Linke Ouyang and Bin Wang and Siyuan Huang and Pan Zhang and Xiaoyi Dong and Jiaqi Wang and Conghui He},
+            year={2023},
+            eprint={2308.13566},
+            archivePrefix={arXiv},
+            primaryClass={cs.LG}
+      }
+      </code></pre>
+    </div>
+</section>
+
+<!-- Terms of use and License -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+      <div class="column is-six-fifths">
+        <h4 class="title is-5">Terms of Use</h4>
+        <div class="content has-text-justified">
+          <p>
+            By utilizing this service, users are bound to comply with the stipulated terms: The service is primarily a research preview, designed exclusively for non-commercial applications. It offers only limited safety measures and there's a possibility it may produce offensive content. Users are strictly prohibited from using the service for any illegal, harmful, violent, racist, or sexually explicit purposes.
+          </p>
+        </div>
+        <h4 class="title is-5">License</h4>
+        <div class="content has-text-justified">
+          <p>
+            This service, being a research preview, is intended solely for non-commercial use and is governed by the model License of LLaMA. If you encounter any potential violation, we urge you to contact us immediately.          </p>
+        </div>
+      </div>
+  </div> </section> <!-- End Terms of use and License --> 
+
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This website is partially borrowed from  <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
